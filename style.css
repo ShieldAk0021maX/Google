@@ -1,0 +1,147 @@
+*{
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+  font-family:hack sans-serif;
+}
+body{
+  min-height:100vh;
+  width:100%;
+}
+.container{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  gap:30px;
+  padding:30px 30px 30px 30px;
+}
+.header{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  gap:15px;
+}
+.header h3{
+  font-size:30px;
+  font-weight:lighter;
+  font-weight:400;
+  color:#373737;
+}
+.header p{
+  font-size:19px;
+  color:#373737;
+}
+.inputField input{
+  height:55px;
+  width:100%;
+  border:1.5px solid lightgray;
+  border-radius:5px;
+  outline:none;
+  padding:0 0 0 10px;
+  font-size:17px;
+  background:none;
+  
+}
+.forget{
+  margin-top:10px;
+  margin-bottom:50px;
+  color:#3A71F1;
+  font-weight:550;
+  font-size:15px;
+  
+}
+.not{
+  font-size:14px;
+  color:#373737;
+  letter-spacing: 0.05px;
+  margin-bottom:55px;
+}
+.not span{
+  font-size:14.5px;
+  color:#3A71F1;
+  font-weight:550;
+}
+.btn{
+  display:flex;
+  justify-content: space-between;
+  text-decoration: none;
+  align-items: center ;
+}
+.btn a{
+  text-decoration: none;
+  color:#3A71F1;
+  font-weight:550;
+}
+.btn :last-child{
+  background: #3A71F1;
+  color:#fff;
+  padding:10px 25px;
+  border-radius:3px;
+}
+.footer{
+  display:flex;
+  flex-direction:column;
+  gap:230px;
+}
+.foot{
+  display:flex;
+  flex-direction: column;
+  gap:30px;
+}
+.lang{
+  width:100%;
+  display:flex;
+  align-items:center;
+  font-size:13px;
+}
+.lang span{
+  display:inline-block;
+  padding:0 40px 0 40px;
+}
+.option{
+  display:flex;
+  gap:30px;
+  font-size:13px;
+  color:#373737;
+}
+label{
+  position:relative;
+  width:200px;
+}
+label:before{
+  content:"Email or phone";
+  position:absolute;
+  left:-290px;
+  top:var(--labelBeforeTop,1px);
+  background:#fff;
+  z-index:var(--labelBeforeZindex,-1);
+  padding:0 5px;
+  font-size:var(--labelBeforeFontSize,16px);
+  color:var(--labelBeforeColor,#878787);
+  font-weight:420;
+  transition:0.2s ease;
+}
+
+
+.error{
+  margin:0;
+  font-size:12px;
+  display:flex;
+  align-items: center;
+  gap:10px;
+  color:#EC3F3F;
+  font-weight:405;
+  margin-top:1px;
+  display:none;
+}
+.error span{
+  font-size:20px;
+  color:#EC3F3F;
+}
+button :hover{
+  background:#175DFF;
+  box-shadow:0 2px 5px black;
+}
